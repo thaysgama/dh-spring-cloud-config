@@ -1,0 +1,3 @@
+server:
+  port:${PORT:8080}
+message: Consumer config inventory-service DEV
