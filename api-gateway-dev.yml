@@ -5,12 +5,12 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: catalogRoute
-          uri: lb://CATALOG
+        - id: usuarioRoute
+          uri: lb://DH-USUARIO
           predicates:
-           - Path=/catalog/**
-        - id: movieRoute
-          uri: lb://MOVIE
+           - Path=/usuario/**
+        - id: contaRoute
+          uri: lb://DH-CONTA
           predicates:
            - Path=/conta/**
           filters:
